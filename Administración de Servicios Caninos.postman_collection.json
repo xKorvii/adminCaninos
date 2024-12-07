@@ -1,0 +1,410 @@
+{
+	"info": {
+		"_postman_id": "eefaf76d-19f1-4f46-a2a3-c794515bb4b9",
+		"name": "Administración de Servicios Caninos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40152728"
+	},
+	"item": [
+		{
+			"name": "Dueño",
+			"item": [
+				{
+					"name": "Insertar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NOMBRE\": \"Scott\",\r\n    \"APELLIDO\": \"Moore\",\r\n    \"TELEFONO\": \"96654287722\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/dueno"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NOMBRE\": \"Scott\",\r\n    \"APELLIDO\": \"Moore\",\r\n    \"TELEFONO\": \"966548627\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/dueno/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/dueno/7"
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/dueno"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Perro",
+			"item": [
+				{
+					"name": "Insertar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NOMBRE\": \"Scott\",\r\n    \"APELLIDO\": \"Moore\",\r\n    \"TELEFONO\": \"96654287722\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NOMBRE\": \"Petiza\",\r\n    \"RAZA\": \"Quiltro\",\r\n    \"EDAD\": \"13\",\r\n    \"PESO\": \"9\",\r\n    \"ID_DUENO\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Historial De Salud",
+			"item": [
+				{
+					"name": "Insertar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NOMBRE\": \"Scott\",\r\n    \"APELLIDO\": \"Moore\",\r\n    \"TELEFONO\": \"96654287722\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NOMBRE\": \"Petiza\",\r\n    \"RAZA\": \"Quiltro\",\r\n    \"EDAD\": \"13\",\r\n    \"PESO\": \"9\",\r\n    \"ID_DUENO\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Servicio",
+			"item": [
+				{
+					"name": "Insertar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID_SERVICIO\": \"1\",\r\n    \"NOMBRE\": \"\",\r\n    \"PRECIO\": \"Scott\",\r\n    \"DESCRIPCION\": \"Scott\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/servicio"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NOMBRE\": \"Petiza\",\r\n    \"RAZA\": \"Quiltro\",\r\n    \"EDAD\": \"13\",\r\n    \"PESO\": \"9\",\r\n    \"ID_DUENO\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cita",
+			"item": [
+				{
+					"name": "Insertar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NOMBRE\": \"Scott\",\r\n    \"APELLIDO\": \"Moore\",\r\n    \"TELEFONO\": \"96654287722\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ID_CITA\": \"1\",\r\n    \"FECHA\": \"2024-12-06\",\r\n    \"ESTADO\": \"Suspendida\",\r\n    \"ID_PERRO\": \"1\",\r\n    \"ID_SERVICIO\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/cita/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/perro"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
